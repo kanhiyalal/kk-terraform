@@ -26,7 +26,7 @@ jobs:
       run: echo "${{ secrets.GCP_CREDENTIALS }}" > $HOME/gcloud.json
 
     - name: 'Setup gcloud CLI'
-      uses: google-github-actions/setup-gcloud@master
+      uses: google-github-actions/setup-gcloud@v0.3.0
       with:
         service_account_key: ${{ secrets.GCP_CREDENTIALS }}
         export_default_credentials: true
